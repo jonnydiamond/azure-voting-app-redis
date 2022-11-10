@@ -5,7 +5,6 @@ import redis
 import socket
 import sys
 
-# Random comment 
 
 app = Flask(__name__)
 
