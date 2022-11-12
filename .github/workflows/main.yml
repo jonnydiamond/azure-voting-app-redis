@@ -45,3 +45,9 @@ jobs:
              azure-vote-all-in-one-redis.yaml
           images: '${{ secrets.registry }}.azurecr.io/${{ secrets.repository }}/azure-vote-front:${{ github.sha }}'
           pull: false
+      - name: 'Azure Load Testing'
+        uses: azure/load-testing@v1
+        with:
+          loadTestConfigFile: 'AppLoadTest.yaml'
+          loadTestResource: 'com-769-loadtesting'
+          resourceGroup: 'com-769-aks-gha' 
