@@ -5,9 +5,8 @@ import redis
 import socket
 import sys
 
-# new comment 
-# new comment again
-# comment again 
+
+#####
 app = Flask(__name__)
 
 # Load configurations from environment or config file
